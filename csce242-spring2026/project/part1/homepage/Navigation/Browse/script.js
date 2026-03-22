@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function () {
       card.className = "browseBox";
 
       card.innerHTML = `
-        <a href="${game.link || "#"}">
+        <a href="${game.link || "link"}" target="_blank">
           <img src="https://xyutheascended.github.io/csce242-spring2026/project/part1/homepage/images/${game.image}">
         </a>
         <h3>${game.title}</h3>
