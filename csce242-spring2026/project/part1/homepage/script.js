@@ -51,3 +51,32 @@ document.addEventListener("DOMContentLoaded", function () {
 
   updateButtons();
 });
+
+fetch("https://xyutheascended.github.io/csce242-spring2026/project/part1/homepage/json/games.json")
+  .then(res => res.json())
+  .then(data => {
+
+    const container = document.getElementById("gameslayout");
+    if (!container) return;
+
+    const featured = ["Among Us", "God of War", "Rogue Lineage"];
+
+    const filtered = data.games.filter(game =>
+      featured.includes(game.title)
+    );
+
+    container.innerHTML = "";
+
+    filtered.forEach(game => {
+      container.innerHTML += `
+        <div class="gamebox">
+          <a href="${game.link}" target="_blank">
+            <img src="https://xyutheascended.github.io/csce242-spring2026/project/part1/homepage/images/${game.image}" alt="${game.title}">
+          </a>
+          <h3>${game.title}</h3>
+          <p>${game.description}</p>
+        </div>
+      `;
+    });
+
+  });

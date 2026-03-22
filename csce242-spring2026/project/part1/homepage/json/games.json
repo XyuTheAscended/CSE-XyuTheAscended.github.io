@@ -49,6 +49,12 @@
 
     {"title":"Overwatch 2","image":"../images/overwatch2.png","description":"Hero-based multiplayer shooter.","tags":["fps","multiplayer","3d"], "link":"https://overwatch.blizzard.com/"},
 
+    {"title":"Valorant","image":"../images/valorant.png","description":"Tactical team-based shooter.","tags":["fps","multiplayer","3d"], "link":"https://playvalorant.com/"},
+
+    {"title":"Counter-Strike: Global Offensive","image":"../images/cs2.png","description":"Classic competitive shooter.","tags":["fps","multiplayer","3d"], "link":"https://store.steampowered.com/app/730/CounterStrike_Global_Offensive/"},
+
+    {"title":"God of War","image":"../images/godofwar.png","description":"A mythological action-adventure RPG.","tags":["rpg","singleplayer","3d"], "link":"https://store.steampowered.com/app/1593500/God_of_War/"},
+
     {"title":"Doki Doki Literature Club","image":"../images/ddlc.png","description":"A visual novel that turns dark quickly.","tags":["visual","2d"], "link":"https://ddlc.moe/"},
 
     {"title":"Steins Gate","image":"../images/steinsgate.png","description":"A time travel science fiction visual novel.","tags":["visual","2d"], "link":"https://store.steampowered.com/app/412830/STEINSGATE/"},
