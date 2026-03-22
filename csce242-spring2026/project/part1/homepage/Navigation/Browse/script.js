@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   let gamesData = [];
 
-  fetch("https://xyutheascended.github.io/csce242-spring2026/project/part1/homepage/games.json")
+  fetch("https://xyutheascended.github.io/csce242-spring2026/project/part1/homepage/json/games.json")
     .then(res => {
       if (!res.ok) throw new Error("JSON NOT FOUND");
       return res.json();
@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       card.innerHTML = `
         <a href="${game.link || "#"}">
-          <img src="../../images/${game.image}" alt="${game.title}">
+          <img src="https://xyutheascended.github.io/csce242-spring2026/project/part1/homepage/images/${game.image}">
         </a>
         <h3>${game.title}</h3>
         <p>${game.description}</p>
