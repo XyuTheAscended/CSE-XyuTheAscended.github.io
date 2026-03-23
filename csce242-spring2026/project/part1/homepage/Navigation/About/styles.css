@@ -406,8 +406,18 @@ a{
   text-align: center;
 }
 
+.contact-container {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+
+
 #contactForm {
   display: flex;
+  flex: 1;
   flex-direction: column;
   gap: 15px;
   max-width: 500px;
@@ -422,6 +432,16 @@ a{
   background: #111;
   color: white;
 }
+
+.contact-side {
+  flex: 1;
+  background: var(--card);
+  padding: 20px;
+  border-radius: 15px;
+  border: 1px solid var(--border);
+}
+
+
 
 #contactForm button {
   padding: 12px;
@@ -458,6 +478,12 @@ a{
 @media (max-width:768px) {
   #pagelayout {
     flex-direction: column;
+  }
+
+  @media (max-width:768px) {
+  .contact-container {
+    flex-direction: column;
+    }
   }
 
   #sidebar {

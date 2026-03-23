@@ -63,29 +63,38 @@
         <!-- CONTACT FORM -->
         <section id="contactSection">
 
-          <h2>Contact Me</h2>
+<section id="contactSection">
 
-          <form id="contactForm" action="https://formsubmit.co/YOUR_EMAIL_HERE" method="POST">
+  <h2>Contact Me</h2>
 
-            <input type="text" name="name" placeholder="Your Name" required>
+  <div class="contact-container">
 
-            <input type="email" name="email" placeholder="Your Email" required>
+    <!-- LEFT: FORM -->
+    <form id="contactForm" action="https://formsubmit.co/youractualemail@gmail.com" method="POST">
 
-            <textarea name="message" placeholder="Your Message" required></textarea>
+      <input type="text" name="name" placeholder="Your Name" required>
 
-            <button type="submit">Send Message</button>
+      <input type="email" name="email" placeholder="Your Email" required>
 
-            <input type="hidden" name="_captcha" value="false">
+      <textarea name="message" placeholder="Your Message" required></textarea>
 
-            <p id="formStatus"></p>
+      <button type="submit">Send Message</button>
 
-          </form>
+      <input type="hidden" name="_captcha" value="false">
 
-        </section>
+      <input type="hidden" name="_next" value="https://xyutheascended.github.io/csce242-spring2026/project/part1/homepage/Navigation/About/index.html">
 
-      </main>
+    </form>
+
+    <!-- RIGHT: FILL SPACE -->
+    <div class="contact-side">
+      <h3>Get In Touch</h3>
+      <p>If you have any questions, feedback, or game suggestions, feel free to reach out! I’m always looking to improve Game Grouper.</p>
     </div>
+
   </div>
+
+</section>
 
   <script src="script.js"></script>
 </body>
